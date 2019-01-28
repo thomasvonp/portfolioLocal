@@ -1,11 +1,17 @@
 <div class="exp" id="expRef"
-[ngStyle.xs]="{'height.vh':225}"
-[ngStyle.sm]="{'height.vh':200}"
-[ngStyle.md]="{'height.vh':180}"
-[ngStyle.lg]="{'height.vh':180}">
+[ngStyle.xs]="{'height.vh':325}"
+[ngStyle.sm]="{'height.vh':300}"
+[ngStyle.md]="{'height.vh':275}"
+[ngStyle.lg]="{'height.vh':275}"
+[ngStyle.xl]="{'height.vh':200}">
 	<div class="arrow-down"></div>
+	<div class="border" style="background-color: #221130; width:90%; margin:auto;"
+	[ngStyle.xs]="{'width.%':100}"
+	[ngStyle.sm]="{'width.%':100}"
+	[ngStyle.md]="{'width.%':100}"
+	[ngStyle.lg]="{'width.%':95}">
 	<div class="grad">
-	<h1> Education </h1>
+	<h1 style="padding-top:50px;"> Education </h1>
 	</div>
 	<div class="educationExp">
 
@@ -15,7 +21,9 @@
 			<mat-icon></mat-icon>
 				<mat-card-title>Royal Institute of Technology</mat-card-title>
 				<mat-card-subtitle>
-				Media Technology explores techniques of communication within different types of mediums and product development.
+				Media Technology explores techniques of communication within different types of medium and product development. 
+				The idea of the programme is to facilitate the conception of an idea, iteration, development and field research. 
+				The whole process gives a stable foundation for deploying a product into a market.
 				<br/>
 				<br/>
 				Master: Interaction Design & Visualization.
@@ -27,7 +35,8 @@
 					<b>Programming Languages</b>
 					<li>C#</li>
 					<li>Python</li>
-					<li>JS / JQuery</li>
+					<li>JavaScript</li>
+					<li>JQuery</li>
 					<li>SQL</li>
 					<li>PHP</li>
 					<li>C++</li>
@@ -40,19 +49,25 @@
 					<b>Frameworks</b>
 					<li>AngularJS</li>
 					<li>NodeJS</li>
+					<li>Github / SourceTree</li>
 					<li>Ionic</li>
 					<li>Firebase</li>
 					<li>Google Maps</li>
 					<li>Unity Game Engine</li>
 				</ul>
 				</mat-card>
+				<br/>
+				<br/>
+				The above proficiencies are part of what has been used throughout the multitude of small projects at KTH. 
+				These projects allowed me to develop a critical and logical way of solving different problems with the tools at hand.
+				
 				</mat-card-subtitle>
 			</mat-card-header>
 		</mat-card>
 		<mat-card class="cards"
 		[ngStyle.xs]="{'min-height.px':0}"
 		[ngStyle.sm]="{'min-height.px':0}">
-			<img [src]="kthSrc" style="max-width:100%; 	border: solid white 1px;">
+			<img [src]="kthSrc" style="max-width:100%; 	border: solid white 2px;">
 		</mat-card>
 		<!-- </div>	 -->
 	</div>
@@ -68,7 +83,7 @@
 		<mat-card class="cards"
 		[ngStyle.xs]="{'min-height.px':0}"
 		[ngStyle.sm]="{'min-height.px':0}">
-			<img [src]="Elgiganten" style="max-width:100%; 	border: solid white 1px;">
+			<img [src]="Elgiganten" style="max-width:100%; 	border: solid white 2px;">
 		</mat-card>	
 		
 		<mat-card class="cards"
@@ -80,119 +95,69 @@
 				<mat-card-subtitle>
 				<b>- 2013 - 2017 | Aftersales</b>
 				<br/>
-				Support within technology, troubleshooting of products. Tasks involved logistics, RMA's, supplier contact, services and stock handling. Customer service after purchase of a product.
+				Support within technology, troubleshooting of products. Tasks involved logistics, RMA's, contact with all suppliers, service of products and stock management. 
+				The role involved customer service after their purchase of a product.
 				<br/>
 				<br/>
 				<b> - 2017 - 2019 | Salesperson</b>
 				<br/>
 				Being a salesperson involves giving the customer the best possible experience of purchasing a product. Not only should the customer receive the correct product for his or her needs,
-				but also have a positive experience of the purchase. 
+				but also have a positive experience of the purchase. Making a proper analysis of customer needs, considering essential accessories or services and pedagogically presenting the
+				solution at hand is unique to every customer and their needs. This entire process includes not only retail but business-to-business sales.
+				In addition to this, a certification for insurance sales is required for selling these.
 				</mat-card-subtitle>
 			</mat-card-header>
 		</mat-card>	
 
 	</div>
-	<!-- fxLayoutAlign="center center"  -->
-				<!-- fxLayout="row"  -->
-				<!-- fxLayout.xs="column"  -->
-				<!-- fxLayout.sm="column" -->
-				<!-- fxFlexFill style="height:auto;"> -->
 	
-		<!-- <div class="textExp" fxFlex="35" style="background-color:#43344f; padding:15px; border: solid; min-height:0;"> -->
-			<!-- <b>Elgiganten AB</b> -->
-			<!-- <div class="text"> -->
-			<!-- <p> -->
-				<!-- <b>- 2013 - 2017 | Aftersales</b> -->
-				<!-- <br/> -->
-				<!-- Support within technology, troubleshooting of products. Tasks involved logistics, RMA's, supplier contact, services and stock handling. Customer service after purchase of a product. -->
-				<!-- <br/> -->
-				<!-- <br/> -->
-				<!-- <b> - 2017 - 2019 | Salesperson</b> -->
-				<!-- <br/> -->
-				<!-- Being a salesperson involves giving the customer the best possible experience of purchasing a product. Not only should the customer receive the correct product for his or her needs, -->
-				<!-- but also have a positive experience of the purchase.  -->
-			<!-- </p></div> -->
-		<!-- </div> -->
-		
-			<!-- <div class="imgContainer" fxFlex="500px" style="margin-left: 10%; background-color:#43344f; padding:15px; border: solid; min-height:0;"> -->
-				<!-- <img [src]="Elgiganten" style="width:470px;"> -->
-				<!-- <!-- style="display:inline; margin-left: auto; margin-right:auto; padding:20px; border: solid; max-width:23%;"> --> 
-			<!-- </div> -->
+		<div class="grad">
+		<h1> About me </h1>
+		</div>
+		<div class="aboutme">
 
-	
-
-	<!-- <h1>  -->
-	<!-- Experience -->
-	<!-- </h1> -->
-
-	<!-- <div class="infoExp" style="" -->
-		<!-- fxLayout="row"  -->
-		<!-- fxLayout.xs="column"  -->
-		<!-- fxLayout.sm="column"  -->
-		<!-- > -->
-		<!-- <div class="studies" fxFlex="50" style="height:auto;"> -->
-		<!-- <div style="border: solid 5px white; border-radius:4px; padding:4px;"> -->
-		<!-- <h2>Education</h2> -->
-			<!-- <br/> -->
-			<!-- Media Technology explores techniques of communication within different types of mediums and product development. -->
-			<!-- <br/> -->
-			<!-- Master: Interaction Design & Visualization. -->
-			<!-- <br/> -->
-			<!-- <br/> -->
-			<!-- <div class="expList"  -->
-				<!-- fxLayout="row"  -->
-				<!-- fxLayout.xs="column"  -->
-				<!-- fxFlexFill style="height:auto;"> -->
-				<!-- <ul class="borderUL" fxFlex="50"> -->
-					<!-- <b>Programming Languages</b> -->
-					<!-- <li>C#</li> -->
-					<!-- <li>Python</li> -->
-					<!-- <li>JS / JQuery</li> -->
-					<!-- <li>SQL</li> -->
-					<!-- <li>PHP</li> -->
-					<!-- <li>C++</li> -->
-				<!-- </ul> -->
-
-				<!-- <br/> -->
-				<!-- <ul class="borderUL" fxFlex="50"> -->
-					<!-- <b>Frameworks</b> -->
-					<!-- <li>AngularJS</li> -->
-					<!-- <li>NodeJS</li> -->
-					<!-- <li>Ionic</li> -->
-					<!-- <li>Firebase</li> -->
-					<!-- <li>Google Maps</li> -->
-					<!-- <li>Unity Game Engine</li> -->
-				<!-- </ul> -->
-			<!-- </div> -->
-			<!-- </div> -->
-		<!-- </div> -->
-		<!-- <div class="imageKTH" fxFlex="50"> -->
-			<!-- <img [src]="kthSrc" style="width:50%; margin-top:5em; margin-bottom:0.2em; margin-left:auto; margin-right:auto; display:block;" > -->
-		<!-- </div> -->
-	<!-- </div> -->
-	
-		<!-- <h2 style="padding-left:15%;">Work experience</h2> -->
-		<!-- <div class="work" style="" -->
-		<!-- fxLayout="row"  -->
-		<!-- fxLayout.xs="column"  -->
-		<!-- fxLayout.sm="column" -->
-		<!-- style="padding-left:15%;"> -->
-		
-			<!-- <div class="imageEG" fxFlex="30" style="max-width:40%;"> -->
-				<!-- <img [src]="EGSrc" style="width:100%; margin-left:auto; margin-right:auto; display:block;" > -->
-			<!-- </div> -->
-			
-			<!-- <div class="EGAB" fxFlex="50" > -->
-				<!-- Elgiganten AB -->
-				<!-- <ul> -->
-					<!-- <li>2013 - 2017 | Aftersales</li> -->
-					<!-- Support within technology, troubleshooting of products. Tasks involved logistics, RMA's, supplier contact, services and stock handling. Customer service after purchase of a product. -->
-					<!-- <br/> -->
-					<!-- <br/> -->
-					<!-- <li>2017 - 2019 | Salesperson</li> -->
-					<!-- Being a salesperson involves giving the customer the best possible experience of purchasing a product. Not only should the customer receive the correct product for his or her needs, -->
-					<!-- but also have a positive experience of the purchase.  -->
-				<!-- </ul> -->
-			<!-- </div>	 -->
-		<!-- </div> -->
-	<!-- </div> -->
+		<div class="box">
+			<mat-card class="cards">
+				<mat-card-header>
+				<mat-icon></mat-icon>
+					<mat-card-title>Royal Institute of Technology</mat-card-title> 
+					<mat-card-subtitle>
+					My name is Thomas von Prouss. I started studying Media Technology in 2013 while working part time at Elgiganten. 
+					<br/>
+					Full list of courses:
+					<ul>
+					  <li>Advanced Projectcourse in Interactive Media Technology</li>
+					  <li>Applied Computer Science</li>
+					  <li>Algebra and Geometry</li>
+					  <li>Database Technology</li>
+					  <li>Electrical Engineering</li>
+					  <li>Graphic Arts Technology</li>
+					  <li>Haptics, Tactile and Tangible Interaction</li>
+					  <li>Human Perception for Information Technology</li>
+					  <li>Human-Computer Interaction</li>
+					  <li>Industrial Management</li>
+					  <li>Information Visualization</li>
+					  <li>Interaction Design as a Reflective Practice</li>
+					  <li>Interaction Programming and the Dynamic Web</li>
+					  <li>Media, Technology and Culture</li>
+					  <li>Mobile Development with Web Technologies</li>
+					  <li>Multimodal Interaction and Interfaces</li>
+					  <li>Photography for Media</li>
+					  <li>Physical Interaction Design and Realization</li>
+					  <li>Programming Techniques (Python)</li>
+					  <li>Reflective Design Process</li>
+					  <li>Research Methods in Interactive Media Technology</li>
+					  <li>Social Media Technologies</li>
+					  <li>Software Reliability</li>
+					  <li>Sound as an Information Medium</li>
+					  <li>Spectral Transforms</li>
+					  <li>Sustainability and Media Technology</li>
+					  <li>Video Technology</li>
+					  <li>Waves</li>
+					  <li>XML for Publishing</li>
+					</ul>
+					</mat-card-subtitle>
+				</mat-card-header>
+			</mat-card>
+		</div>
+	</div>

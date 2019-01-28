@@ -1,0 +1,159 @@
+.exp
+{
+    height:125vh;
+	width:100vw;
+	max-width:100%;
+	margin:0;	
+	background:white;
+	/* background:url('./background3white.png') center top;  */
+	/* background-size:cover; */
+    overflow:hidden;
+	color:white;
+	font-style:Helvetica;
+}
+
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #221130;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.expRef
+{
+
+}
+.cards2 {
+
+	display: inline-flex;
+	width:auto;
+	/* min-width:200px; */
+	min-width:40%;
+	margin-top:15px;
+}
+
+.cards{
+	/* margin: 5px auto; */
+	/* padding:4px; */
+	/* margin-bottom:15px; */
+	background-color:#43344f;
+
+	max-width:790px;
+	padding:20px;
+	color:white;
+	font-style:Verdana;
+	min-height:410px;
+
+}
+
+@font-face {
+font-family: "E2";
+src: url("/../assets/EHeadline.otf") format("opentype");
+}
+
+h1 {
+	margin-left:10%;
+	font-family:E2;
+	font-size:65px;
+	color:#221130;
+}
+.mat-card-subtitle{
+	color:white;
+	font-style:Verdana;
+}
+
+.infoExp {
+	flex-flow: row wrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left:1%;
+	margin-right:1%;
+}
+
+.educationExp
+{
+	margin-top:50px;
+	flex-flow: row wrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left:1%;
+	margin-right:1%;
+}
+
+/* @media screen and (max-width: 600px){ */
+
+  /* .imageroot{ */
+    /* float:none; */
+    /* display:block; */
+    /* width:100%; */
+  /* } */
+/* } */
+
+/* h1  */
+/* { */
+	/* font-family:Helvetica; */
+	/* font-size:22px; */
+	/* color:white; */
+	/* text-align: center; */
+/* } */
+
+/* p */
+/* { */
+	/* font-family:Helvetica; */
+	/* font-size:14px; */
+	/* color:white; */
+	/* text-align: center; */
+	/* text-align:justify; */
+	/* margin:3%; */
+/* } */
+
+/* .borderUL */
+/* { */
+	/* border: 2px solid white; */
+	/* border-radius:4px; */
+	/* padding-top:10px; */
+	/* padding-bottom:10px; */
+	/* max-height:50%; */
+/* } */
+
+/* .studies */
+/* { */
+	/* padding-left:15%; */
+	/* padding-right:2%; */
+	/* height:100%; */
+
+/* } */
+
+/* .work  */
+/* { */
+	/* /* padding-left:5%; */ 
+	/* /* padding-right:15%; */ 
+	/* /* height:100%; */ 
+/* } */
+
+/* .infoExp */
+/* { */
+	/* flex-flow: row wrap; */
+	/* height: 75vh; */
+	/* display: flex; */
+	/* justify-content: center; */
+	/* align-items: center; */
+	/* margin-left:15%; */
+	/* margin-right:15%; */
+/* } */
+
+/* .imageroot{ */
+	/* flex-flow: row wrap; */
+	/* height: 75vh; */
+	/* display: flex; */
+	/* justify-content: center; */
+	/* align-items: center; */
+	/* margin-left:15%; */
+	/* margin-right:15%; */
+/* } */

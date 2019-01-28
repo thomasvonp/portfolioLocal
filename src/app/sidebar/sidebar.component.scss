@@ -1,0 +1,59 @@
+@font-face {
+font-family: "E2";
+src: url("/../assets/EHeadline.otf") format("opentype");
+}
+
+.sticky {
+	background-color: transparent !important;
+  	text-align:right;
+	display: inline-block;
+	font-family: E2;
+	color:white;
+	letter-spacing:0.2em;
+	position: fixed;
+	top: 0;
+	overflow: hidden;
+	z-index: 9999;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 1s, opacity 1s linear;
+	 
+}
+
+.transparent{
+	background-color: transparent !important;
+  	text-align:right;
+	display: inline-block;
+	font-family: E2;
+	color:white;
+	letter-spacing:0.2em;
+	position: fixed;
+	top: 0;
+	overflow: hidden;
+	z-index: 9999;
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 1s linear;
+}
+
+
+.row
+{
+	top: 0;
+	letter-spacing:0.2em;
+	font-size:33px;
+	color:white;
+	position: fixed;
+	z-index: 999;
+}
+
+.mat-button 
+{
+	color:white;
+	font-family: E2;
+	font-size:25px;
+	letter-spacing:0.2em;
+	margin:10px;
+}
+
+

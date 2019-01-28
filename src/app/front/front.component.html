@@ -1,0 +1,47 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<div class="front" id="frontRef" 
+[ngStyle.xs]="{'height.vh':50}"
+[ngStyle.sm]="{'height.vh':75}"
+[ngStyle.md]="{'height.vh':100}"
+[ngStyle.lg]="{'height.vh':100}">
+
+<div layout="column" layout-fill>
+	<!-- <div layout="row"> -->
+
+	<!-- <mat-toolbar class="transparent"> -->
+		<!-- <button mat-button color="white">Home</button> -->
+		<!-- • -->
+		<!-- <button mat-button color="primary">Portfolio</button> -->
+		<!-- • -->
+		<!-- <button mat-button color="primary">Experience</button> -->
+		<!-- • -->
+		<!-- <button mat-button color="primary">Contact</button> -->
+	<!-- </mat-toolbar> -->
+	<!-- </div> -->
+</div>
+	<img [src]="imageSrc" style="width:27%; margin-top:5em; height:auto; margin-bottom:0.2em;" >
+		  
+	<div class="hey"
+		[ngStyle.xs]="{'font-size.px': 35}"
+		[ngStyle.sm]="{'font-size.px': 40}"
+		[ngStyle.md]="{'font-size.px': 60}"
+		[ngStyle.md]="{'margin-left.%': 30}"
+		[ngStyle.xl]="{'margin-left.%': 30}">
+		  
+		Hey, I'm...
+	</div>
+	
+	<div class="info">
+		<h1  
+		[ngStyle.xs]="{'font-size.px': 35}"
+		[ngStyle.sm]="{'font-size.px': 40}"
+		[ngStyle.md]="{'font-size.px': 60}">
+			Thomas von Prouss
+		</h1>
+		<h2>
+			Civil Engineer in Media Technology
+		</h2>
+	</div>
+
+</div>

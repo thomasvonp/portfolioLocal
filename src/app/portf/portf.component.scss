@@ -1,0 +1,124 @@
+@font-face {
+font-family: "E2";
+src: url("/../assets/EHeadline.otf") format("opentype");
+}
+
+.portf
+{
+    height:100vh;
+	width:100vw;
+	max-width:100%;
+	margin:0;	
+	/* background:url('./background3.png') fixed no-repeat left top;  */
+	/* bg fixed */
+	background:url('../../assets/grad.png') bottom no-repeat; 
+    overflow:hidden;
+	overflow-y:hidden;
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* overflow: auto; */
+}
+
+h1 
+{
+	font-family:E2;
+	font-size:65px;
+	color:white;
+	text-align: center;
+}
+
+p
+{
+	font-family:Verdana;
+	font-size:14px;
+	color:white;
+	text-align: center;
+	text-align:justify;
+	margin:3%;
+}
+
+.img {
+  width: 100%;
+}
+.card-picture {
+		margin-bottom:3em;
+		width:200px;
+		height:200px;
+}
+
+.portcards 
+{
+		margin-left:10em;
+	margin-right:10em;
+	display:inline;
+	
+
+}
+
+.cards
+{
+	height:100vh;
+	/* max-width:80vw; */
+	/* width:300px; */
+	text-align: center;
+	display:inline;
+	margin-left: 11%;
+    max-width: 80%;
+	place-content:0;
+}
+
+.card-deck-container{
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -ms-box-orient:horizontal;
+    -moz-box-orient:horizontal;
+    -webkit-box-direction: normal;
+    -ms-box-direction: normal;
+    -moz-box-direction: normal;
+    
+    flex: 1 1 1;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -ms-box-flex: 1;
+    -moz-box-flex: 1;
+    
+    width: 100%;
+    /* max-width: 1200px; */
+    position: relative;
+    border-radius: 2px;
+    padding: 10px 10px 30px;
+    /* margin: 0 10px 10px 15%; */
+	height:auto;
+	width:auto;
+    
+}
+
+.card-item{
+    flex: 1;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -ms-box-flex: 1;
+    -moz-box-flex: 1;
+    padding: 5px;
+    max-width:311px;
+	margin:3%;
+  
+}
+
+.center{
+	margin: 5px auto;
+	padding:4px;
+	margin-bottom:15px;
+}
+
+.main-div{
+	flex-flow: row wrap;
+	height: 75vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left:15%;
+	margin-right:15%;
+}

@@ -1,0 +1,63 @@
+.root
+{
+	display: flex;
+	overflow-y:hidden;
+	max-width:100%;
+	-webkit-filter: blur(8px);
+}
+
+.dialog-project 
+{
+	background:url('./blur2.png')  no-repeat center center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	width:55vw;
+	height:80vh;
+	padding:4px;
+	color:white;
+	overflow:hidden;
+} 
+
+.mat-dialog-container 
+{
+	/* max-height:100vh; */
+	/* padding:4px; */
+}
+.emailAdd 
+{
+	width:500px;
+} 
+
+.textAdd
+{
+	margin-top:5px;
+	height:350px;
+	width:500px;
+}
+
+.textAreaAdd
+{
+	height:300px;
+}
+
+h1 
+{
+font-size:2em;	
+text-align:center;
+padding:15px;
+}
+
+h2 
+{
+font-size:1em;	
+text-align:center;
+}
+
+p
+{
+	padding-left:80px;
+	padding-right:80px;
+	/* max-width:1000px; */
+	text-align:justify;
+}

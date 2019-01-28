@@ -1,0 +1,24 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+<div 
+class="portf"
+id="portfRef"
+[ngStyle.xs]="{'height.vh':275}"
+[ngStyle.sm]="{'height.vh':275}"
+[ngStyle.md]="{'height.vh':150}"
+[ngStyle.lg]="{'height.vh':100}">
+	<h1 [ngClass]="{'blurOff': !blur, 'blurOn': blur}">
+		Portfolio
+	</h1>
+
+	<div class="main-div" [ngClass]="{'blurOff': !blur, 'blurOn': blur}" [ngStyle.xl]="{'margin-left.%':20, 'margin-right.%':20}">
+		<mat-card *ngFor="let picture of pictures"  class="z-depth center" flex="60" >
+			<img (click)="openProjectDialog($event)"
+				value=".root{-webkit-filter: blur(8px);}" 
+				[src]="picture.img" 
+				[id]="picture.title" 
+				style="max-width:300px;"
+>
+		</mat-card>
+	</div>
+</div>

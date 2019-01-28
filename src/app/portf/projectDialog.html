@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<div class="dialog-project"
+				[ngStyle.xs]="{'width.vw': 77}"
+				[ngStyle.sm]="{'width.vw': 77}">
+				
+	<mat-dialog-content style="max-height:100vh;">
+	<h1 mat-dialog-title>{{data.project}}</h1>
+        <h2>
+		<b>About the project</b>
+	   <a style="margin-left:50px;" *ngIf="data.project === 'Bachelor Thesis'" mat-raised-button target="_blank"
+	   [href]="'http://kth.diva-portal.org/smash/get/diva2:942341/FULLTEXT01.pdf'" target="blank">Link to Research Paper on DIVA</a>
+	   <a style="margin-left:50px;"  *ngIf="data.project === 'Le Bon Nobel'" mat-raised-button target="_blank" 
+	   [href]="'http://www.cawards.se/project/le-bon-nobel/'" target="blank">Link to CA Awards website</a>
+	   <a style="margin-left:50px;"  *ngIf="data.project === 'Le Bon Nobel'" mat-raised-button target="_blank"
+	   [href]="'https://lebonnobel.github.io/'" target="blank">Link to Github</a>
+	   <a style="margin-left:50px;"  *ngIf="data.project === 'Le Bon Nobel'" mat-raised-button target="_blank"
+	   [href]="'https://lebonnobel.github.io/nobel/'" target="blank">Link to Demo</a>
+	   
+
+	   <!-- <button style="margin-left:50px;"  *ngIf="data.project === 'Digital Hourglass'" mat-raised-button target="_blank"> -->
+	   <!-- <a [href]="'https://drive.google.com/file/d/1nedWCT1-cGJVv_8s7pKSpkUzN2Y9AxKC/view?usp=sharing'" target="blank">Link to video</a> -->
+       <!-- </button> -->
+	   <a style="margin-left:50px;"  *ngIf="data.project === 'Information Visualization'" mat-raised-button target="_blank"
+		[href]="'http://xml.csc.kth.se/~thomasvp/DM2517/ivis/proj2/app/index.html'" target="blank">Link to Demo</a>
+		</h2>
+
+
+		
+
+
+		
+		
+		
+	   <!-- First part  -->
+		<div style="max-width: 15vw;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				border: 5px solid white;"
+				*ngIf="data.project === 'Bachelor Thesis'"
+				[ngStyle.xs]="{'max-width.vw': 100}"
+				[ngStyle.sm]="{'max-width.vw': 100}">
+			<ul>
+				<li><b>C# programming</b></li>
+				<li><b>PHP & SQLite3 connections</b></li>
+				<li><b>UX, HCI & UI design</b></li>
+				<li><b>Animation design</b></li>
+			</ul>
+		</div>
+		
+		<div style="max-width: 15vw;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				border: 5px solid white;"
+				*ngIf="data.project === 'Aladeen Adventures'"
+				[ngStyle.xs]="{'max-width.vw': 100}"
+				[ngStyle.sm]="{'max-width.vw': 100}">
+			<ul>
+				<li><b>C# programming</b></li>
+				<li><b>HTC Vive API & Unity</b></li>
+				<li><b>UX & Game design</b></li>
+				<li><b>AngularJS</b></li>
+				<li><b>PHP & SQL</b></li>
+			</ul>
+		</div>
+		
+		<div style="max-width: 15vw;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				border: 5px solid white;"
+				*ngIf="data.project === 'Le Bon Nobel'"
+				[ngStyle.xs]="{'max-width.vw': 100}"
+				[ngStyle.sm]="{'max-width.vw': 100}">
+			<ul>
+				<li><b>AngularJS</b></li>
+				<li><b>D3 JS</b></li>
+				<li><b>UX / HCI Design</b></li>
+				<li><b>API</b></li>
+				<li><b>Information Visualization</b></li>
+			</ul>
+		</div>
+		
+		<div style="max-width: 15vw;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				border: 5px solid white;"
+				*ngIf="data.project === 'Digital Hourglass'"
+				[ngStyle.xs]="{'max-width.vw': 100}"
+				[ngStyle.sm]="{'max-width.vw': 100}">
+			<ul>
+				<li><b>C++</b></li>
+				<li><b>Arduino UNO</b></li>
+				<li><b>Soldering, laser cutting</b></li>
+			</ul>
+		</div>
+		
+		<div style="max-width: 15vw;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				border: 5px solid white;"
+				*ngIf="data.project === 'Pangaea'"
+				[ngStyle.xs]="{'max-width.vw': 100}"
+				[ngStyle.sm]="{'max-width.vw': 100}">
+			<ul>
+				<li><b>Animations</b></li>
+				<li><b>Social media and Analytics</b></li>
+				<li><b>Group work & project iteration</b></li>
+			</ul>
+		</div>
+
+		<div style="max-width: 15vw;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				border: 5px solid white;"
+				*ngIf="data.project === 'Information Visualization'"
+				[ngStyle.xs]="{'max-width.vw': 100}"
+				[ngStyle.sm]="{'max-width.vw': 100}">
+			<ul>
+				<li><b>AngularJS</b></li>
+				<li><b>D3 JS</b></li>
+				<li><b>API</b></li>
+				<li><b>Information Visualisation</b></li>
+			</ul>
+		</div>
+		
+		<p *ngIf="data.project === 'Bachelor Thesis'"
+		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
+		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
+		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
+		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">			
+		Games and entertainment are two areas that are growing and developing rapidly. Clearly games are successful and
+		this has inadvertedly led to individuals breaking down games into its core components. Game developers and
+		researchers are examining parts and elements of games in order to apply the addictive elements on tasks
+		that are not related to games. This process is called gamification, and its purpose is to motivate users for the
+		task at hand.
+		<br/>
+		<br/>
+		A few elements from the modern game Candy Crush attracted our attention - the
+		visual motion effects and animations. The purpose of this study was to examine the motivational
+		influence of visual motion effects and animations. This is accomplished by selecting college students who are actively studying
+		and allowing these students use a gamified application for the
+		purpose of increasing their motivation. To examine this we developed a program
+		where users are exposed to motion effects and animations. In the program, their self-estimated
+		motivation is recorded. In addition to this type of data, more qualitative answers were recorded from
+		surveys to reach a higher degree of validity of the results.
+		</p>
+		
+		<!-- Aladeen -->
+
+
+		<div class="embed-video" style="padding-top:10px;">
+			<div class="videoWrapper">	
+			<iframe style="display:block; margin:auto; " *ngIf="data.project === 'Aladeen Adventures'" webkitallowfullscreen mozallowfullscreen allowfullscreen src="https://player.vimeo.com/video/199387271" width="560" height="315"></iframe>
+			</div>
+		</div>
+		<!-- <iframe src= width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></ifram	e>		 -->
+		<br/>
+		<p *ngIf="data.project === 'Aladeen Adventures'"
+		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
+		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
+		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
+		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">
+		This VR project involves multi-screen and multiplayer game design with a focus on multimodal interactions.
+		The goal was to to build a virtual reality game and that was engaging not only the main player, but also to other spectators such that they can participate in the game on a main screen.
+		To do this, we developed the VR-game supplemented by a website, a database and a website for spectators to browse on their mobile phones as a second screen.
+		</p>
+		
+		<!-- Lebon -->
+		<p *ngIf="data.project === 'Le Bon Nobel'"
+		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
+		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
+		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
+		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">			
+		Le Bon Nobel is a tool to visualize Nobel prize laureates throughout history, from a
+		development and geographical context down to an individual level.
+		The aim of Le Bon Nobel is to give the user the freedom to explore Nobel prize laureates
+		and find new interesting information and possible correlations, without needing any prior
+		knowledge of the laureates. Additionally, we want to offer the user an objective view of the
+		patterns of who the average Nobel prize laureate is, where they come from and what the
+		conditions are in their respective countries.
+		In terms of equality it’s an issue that the vast majority of the laureates are people of the
+		same gender and from the same area of the world. This tool seeks to highlight these issues
+		and hopefully the users will be able to see some aspects that could be one of the sources to
+		this inequality.
+		</p>
+		<div class="embed-video" style="padding-top:10px;">
+			<div class="videoWrapper">	
+			<iframe style="display:block; margin:auto;" *ngIf="data.project === 'Digital Hourglass'" src="https://drive.google.com/file/d/1nedWCT1-cGJVv_8s7pKSpkUzN2Y9AxKC/preview" width="60%" height="500px"></iframe>
+			</div>
+		</div>		
+		
+		<!-- Digital Hourglass -->
+		<p *ngIf="data.project === 'Digital Hourglass'"
+		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
+		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
+		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
+		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">	
+
+		<br/>
+		The goal of this project was to create an artifact that uses physical interaction and could be useful in a library. Our group came
+		up with the idea of a digital hourglass to use during studies. The purpose is to help the student find balance between studying and taking breaks.
+		To use the hourglass, the user inputs the amount of time that they would prefer to study. The hourglass will then dynamically alert the user 
+		of break times during the study. In order to make the interaction with the hourglass as intuitive as possible, we wanted to mimic the interactions of an analog hourglass
+		as much as possible. 
+		</p>	
+		
+		<!-- GSC -->
+		<p *ngIf="data.project === 'Group Strength Calculator'"
+		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
+		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
+		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
+		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">	
+		
+		</p>
+		
+		<!-- InfoVis -->
+		<p *ngIf="data.project === 'Information Visualization'"
+		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
+		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
+		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
+		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">	
+		The idea of enormous sets of data in a spreadsheet can be very intimidating, not to mention hard to read and understand. Something that a regular table can't show 
+		at a first glance is change over time. The answer to this idea is information visualization. Compare these two following images; 
+		</p>
+
+		<div class="embed-video" style="padding-top:10px;">
+			<div class="videoWrapper">			
+			<iframe style="display:block; margin:auto;" *ngIf="data.project === 'Pangaea'" src="https://drive.google.com/file/d/1IY_KA2BvS9icsB3JJ4dCW_o2WSQFGSTT/preview" width="60%" height="500px"></iframe>		
+			</div>
+		</div>
+		
+		<p *ngIf="data.project === 'Pangaea'"
+		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
+		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
+		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
+		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">	
+		Pangaea was a theoretical project about social media development with the idea of iteration. In essence, making a project, picking out the best parts and starting over and over
+		led this idea to the success it was. In every iteration there were new unseen factors that required examination. Looking at social media today, 
+		and most importantly what defines their success, was one of the leading goals of this project. How can we make a successful social media application? Why would people use it?
+		Our group looked at important factors such as demography, smartphone availability, global interests and global activity. Many of these key points connect to 
+		each other. Successful social media platforms today such as Instagram have their own winning key concepts. This project's key concept was the "fresh and live" feeling of
+		the pictures users would upload.
+		<br/>
+		<br/>
+		The animation was quickly done with the help of Moovly in order to get a short ad for the project.
+		</p>
+		
+		
+		
+		
+		<!-- Pictures -->
+		
+		<img [src]="data.picture" *ngIf="data.project != 'Information Visualization'" style="border: 5px white solid;max-width:30vw; border-radius: 2%; display: block; margin-left: auto; margin-right: auto;">
+	
+		<!-- https://drive.google.com/file/d/1IY_KA2BvS9icsB3JJ4dCW_o2WSQFGSTT/view -->
+	
+		<img *ngIf="data.project === 'Information Visualization'" [src]="infovis1" style="border: 5px white solid; border-radius: 2%;  max-width:30vw; display: block; margin-left: auto; margin-right: auto;"/>
+		<br/>
+		<img *ngIf="data.project === 'Information Visualization'" [src]="infovis2" style="border: 5px white solid; border-radius: 2%; max-width:30vw; display: block; margin-left: auto; margin-right: auto;"/>		
+
+	
+	
+	
+	
+	
+	
+		<!-- Part 2 -->
+		<!-- Bachelor -->
+		
+		<p *ngIf="data.project === 'Bachelor Thesis'"
+		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
+		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
+		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
+		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">	
+		
+		The results of the study reveal that there is an overall trend for motivational increase in using a gamified application
+		within studies. The users become more motivated when they see the program as a tool, and can
+		therefore streamline their learning techniques. The program that was used contained two distinct parts
+		that are worth separating; gamification elements and motion effects and animations as a form of
+		reward. From the results, it was concluded that the gamification elements affected the users motivation
+		considerably more than the motion effects did.
+		<br/>
+		<br/>
+		The actual program was developed in Unity (C#) with hooks into SQLite3 to store data. We opted out of MySQL simply because the tables 
+		were not sufficiently big to warrant the use of MySQL. Unity connected to the SQLite3 database through a PHP server script which sent the queries and kept track of the daily
+		questions in the program, as well as verifying usernames and passwords against injection attacks.
+		<br/>
+        </p>
+		
+		
+		<!-- Aladeen -->
+		<p *ngIf="data.project === 'Aladeen Adventures'"
+		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
+		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
+		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
+		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">	
+		The multimodality of this project made it possible for spectators to join with their smartphone. The main player uses a VR headset, whose
+		video feed is displayed on a monitor. While others are using their smartphones to queue objects in the game, they can see their object pop up
+		with an identifying icon above it for recognition of who put it there.
+		<br/>
+		<br/>
+		The game itself was developed in Unity with the HTC Vive plugins for motion tracking. The player was placed on the mat, with the two VR controllers steering the mat left and right by 
+		pulling either arm upwards (to simulate pulling the corner on the mat to steer it). The result proved that the cross-platform interaction between the website and the game worked well and the experience was enjoyable for both the player and the spectators.
+		However, the game suffered from some bad practices that induced cyber sickness in some players. Involuntary movement of the player tends to give this reaction,
+		especially in the intro sequence before the game began.
+		</p>
+		
+		<!-- Lebon -->
+		<p *ngIf="data.project === 'Le Bon Nobel'"
+		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
+		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
+		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
+		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">	
+		
+		The project was made in order to explore the full capabilities of D3 in JavaScript together with AngularJS in order to properly represent nobel laureates from the world. 
+		In order to get an intuitive design and rapid information accessibility, a lot of work on both the front-end, back-end and proper use of API's were vital.
+		To get 
+		</p>
+		
+		<!-- Digital Hourglass -->
+		<p *ngIf="data.project === 'Digital Hourglass'"
+		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
+		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
+		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
+		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">	
+		
+		The digital hourglass is built on the Arduino platform. It used a variety of sensors such as an accelerometer, a speaker and an analog joystick input to wind up the time by rotating it.
+		The casing is cut out by a laser cutter, the wiring is soldered by hand and the majority of the programming was done in C++.
+		 </p>
+		<!-- GSC -->
+		<p *ngIf="data.project === 'Group Strength Calculator'"
+		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
+		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
+		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
+		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">			
+
+		</p>
+		
+		<!-- InfoVis -->
+		<p *ngIf="data.project === 'Information Visualization'"
+		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
+		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
+		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
+		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">	
+		
+		Something very important to note is that not only does the bubble chart represent more information in a more understandable way, but it also represents <b>change.</b> 
+		Most bubble charts have a slider that represents time or change. This gives a user a distinct realization of how something changes over time depending on the parameters.
+		WVS Online (the API that was used) fails to represent the important function of change. It forces you to select different
+		waves which represent 4-5 years and only allows you to see it for that period of time.
+		<br/>
+		<br/>
+		I have created a simple multigraph that takes data from not only WVS but Gapminder as well. 
+		Simply select your country, and two of the parameters available.
+		<br/>
+		<br/>
+		A very interesting symbiosis with the two datasets is that it allows a user to correlate between them.
+		First off, we can see that the population has increased over the years.
+		It’s safe to assume that the happiness has also increased slightly in Malaysia.
+		However, do these two correlate and mean anything?
+		What if we choose the CO2 emissions and see that they have been declining - does that have an indirect impact of happiness?
+		This is the strong aspect of information visualization, to allow users to get ideas that they can research further.
+		This is also the goal with my tool, to open eyes and let users explore outside of their box.
+		</p>
+		
+		<p *ngIf="data.project === 'Pangaea'"
+		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
+		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
+		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
+		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">			
+
+		</p>
+
+		
+		
+		<br/>
+		<!-- Pictures P2 -->
+		<img *ngIf="data.project === 'Bachelor Thesis'" [src]="kex2" style="border: 5px white solid; border-radius: 2%; max-width:50vw; display: block; margin-left: auto; margin-right: auto;"/>		
+		<img *ngIf="data.project === 'Aladeen Adventures'" [src]="aladeen2" style="border: 5px white solid; border-radius: 2%; max-width:30vw; display: block; margin-left: auto; margin-right: auto;"/>		
+		<!-- <img *ngIf="data.project === 'Le Bon Nobel'" [src]="data.picture" style="max-width:50vw;"/>		 -->
+		<img *ngIf="data.project === 'Digital Hourglass'" style="border: 5px white solid; border-radius: 2%; max-width:30vw; display: block; margin-left: auto; margin-right: auto;" [src]="dh24001"/>	
+		<img *ngIf="data.project === 'Group Strength Calculator'" [src]="data.picture" style="border: 5px white solid; border-radius: 2%; max-width:30vw; display: block; margin-left: auto; margin-right: auto;"/>		
+	</mat-dialog-content>
+</div>

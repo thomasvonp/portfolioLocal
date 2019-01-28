@@ -4,21 +4,22 @@
 class="portf"
 id="portfRef">
 <!-- [ngStyle.xs]="{'height.vh':350}" -->
-<!-- [ngStyle.sm]="{'height.vh':300}" -->
-<!-- [ngStyle.md]="{'height.vh':275}" -->
-<!-- [ngStyle.lg]="{'height.vh':175}"> -->
+<!-- [ngStyle.sm]="{'height.vh':310}" -->
+<!-- [ngStyle.md]="{'height.vh':285}" -->
+<!-- [ngStyle.lg]="{'height.vh':190}"> -->
 	<h1 [ngClass]="{'blurOff': !blur, 'blurOn': blur}">
 		Portfolio
 	</h1>
 
-	<div class="main-div" [ngClass]="{'blurOff': !blur, 'blurOn': blur}" [ngStyle.xl]="{'margin-left.%':15, 'margin-right.%':15}">
+	<div class="main-div" [ngClass]="{'blurOff': !blur, 'blurOn': blur}" [ngStyle.xl]="{'margin-left.vw':20, 'margin-right.vw':20}">
 		<mat-card *ngFor="let picture of pictures"  class="z-depth center" flex="60" >
 			<img (click)="openProjectDialog($event)"
 				value=".root{-webkit-filter: blur(8px);}" 
 				[src]="picture.img" 
 				[id]="picture.title" 
-				style="max-width:300px;"
->
+				style="max-width:300px;">
+		<mat-card-title style="text-align:center; font-family:EG; font-size:22px; margin-top:5px; margin-bottom:5px;">{{picture.title}}</mat-card-title>
 		</mat-card>
 	</div>
+	
 </div>

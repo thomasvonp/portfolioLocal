@@ -29,13 +29,6 @@
 	   [href]="'https://drive.google.com/file/d/1-p9ZqzSjMAFPCX69gK2C4p01NSc4lX63/view?usp=sharing'" target="blank">Link to research paper</a>	   
 		</h2>
 
-
-		
-
-
-		
-		
-		
 	   <!-- First part  -->
 		<div style="max-width: 15vw;
 				display: block;
@@ -313,33 +306,25 @@
 		<!-- Pictures -->
 		
 		<img [src]="data.picture" *ngIf="data.project != 'Information Visualization'" 
-		style="border: 5px white solid;max-width:70%; border-radius: 2%; display: block; margin-left: auto; margin-right: auto;"
+		style="border: 5px white solid;max-width:70%; border-radius: 2%; display: block; margin-left: auto; margin-bottom: 15px; margin-right: auto;"
 		[ngStyle.xs]="{'max-width:.%': 100}"
 		[ngStyle.sm]="{'max-width:.%': 100}">
 	
 		<!-- https://drive.google.com/file/d/1IY_KA2BvS9icsB3JJ4dCW_o2WSQFGSTT/view -->
 	
 		<img *ngIf="data.project === 'Information Visualization'" [src]="infovis1" 
-		style="border: 5px white solid; border-radius: 2%;  max-width:70%; display: block; margin-left: auto; margin-right: auto;"
+		style="border: 5px white solid; border-radius: 2%;  max-width:70%; display: block; margin-left: auto; margin-right: auto; margin-top:15px; margin-bottom: 15px; "
 		[ngStyle.xs]="{'max-width:.%': 100}"
 		[ngStyle.sm]="{'max-width:.%': 100}"/>
 		<img *ngIf="data.project === 'Information Visualization'" [src]="infovis2" 
-		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto;"
+		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto; margin-top:15px; margin-bottom: 30px; "
 		[ngStyle.xs]="{'max-width:.%': 100}"
 		[ngStyle.sm]="{'max-width:.%': 100}"/>		
 		<img *ngIf="data.project === 'Stellar Bodies Space Simulator'" [src]="earth" 
-		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto;"
+		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px; "
 		[ngStyle.xs]="{'max-width:.%': 100}"
 		[ngStyle.sm]="{'max-width:.%': 100}"/>		
 
-		
-		
-	
-	
-	
-	
-	
-	
 		<!-- Part 2 -->
 		<!-- Bachelor -->
 		
@@ -473,28 +458,27 @@
 		object was gripped.
 
 		</p>
-		
-		<br/>
+	
 		<!-- Pictures P2 -->
 		<img *ngIf="data.project === 'Bachelor Thesis'" [src]="kex2" 
-		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto;"
+		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto; margin-top:15px; margin-bottom: 15px; "
 		[ngStyle.xs]="{'max-width:.%': 100}"
 		[ngStyle.sm]="{'max-width:.%': 100}"/>		
 		<img *ngIf="data.project === 'Aladeen Adventures'" [src]="aladeen2" 
-		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto;"
+		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto; margin-top:15px; margin-bottom: 15px; "
 		[ngStyle.xs]="{'max-width:.%': 100}"
 		[ngStyle.sm]="{'max-width:.%': 100}"/>		
 		<!-- <img *ngIf="data.project === 'Le Bon Nobel'" [src]="data.picture" style="max-width:50vw;"/>		 -->
 		<img *ngIf="data.project === 'Digital Hourglass'" 
-		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto;" [src]="dh24001"
+		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto; margin-top:15px; margin-bottom: 15px; " [src]="dh24001"
 		[ngStyle.xs]="{'max-width:.%': 100}"
 		[ngStyle.sm]="{'max-width:.%': 100}"/>	
 		<img *ngIf="data.project === 'Group Strength Calculator'" [src]="data.picture" 
-		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto;"
+		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto;margin-top:15px; margin-bottom: 15px; "
 		[ngStyle.xs]="{'max-width:.%': 100}"
 		[ngStyle.sm]="{'max-width:.%': 100}"/>		
 		<img *ngIf="data.project === 'Small Group Formations'" [src]="generator" 
-		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto;"
+		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto; margin-top:15px; margin-bottom: 15px; "
 		[ngStyle.xs]="{'max-width:.%': 100}"
 		[ngStyle.sm]="{'max-width:.%': 100}"/>	
 	</mat-dialog-content>

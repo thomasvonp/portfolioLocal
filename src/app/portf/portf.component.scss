@@ -5,7 +5,8 @@ src: url("/../assets/EHeadline.otf") format("opentype");
 
 .portf
 {
-    height:125vh;
+	height:auto;
+    /* height:125vh; */
 	width:100vw;
 	max-width:100%;
 	margin:0;	
@@ -16,7 +17,8 @@ src: url("/../assets/EHeadline.otf") format("opentype");
 	overflow-y:hidden;
 	display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 125vh;
+	position:relative;
     /* overflow: auto; */
 }
 
@@ -47,6 +49,7 @@ p
 		margin-bottom:3em;
 		width:200px;
 		height:200px;
+		display:block;
 }
 
 .portcards 
@@ -117,7 +120,7 @@ p
 
 .main-div{
 	flex-flow: row wrap;
-	height: 75vh;
+	/* height: 75vh; */
 	display: flex;
 	justify-content: center;
 	align-items: center;

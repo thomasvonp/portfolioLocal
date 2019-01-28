@@ -11,11 +11,12 @@ export class ExpComponent implements OnInit {
 
   constructor() { }
   
-  kthSrc = "./assets/KTH.jpg"
+  kthSrc = "./assets/kthcampus.png"
   EGSrc = "./assets/ELGLogo2.png"
   Elgiganten = "./assets/elgThomas.png"
 
   ngOnInit() {
   }
+  
 
 }

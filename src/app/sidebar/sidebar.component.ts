@@ -58,8 +58,8 @@ export interface DialogData {
 })
 
 
-export class SidebarComponent implements OnInit {
 
+export class SidebarComponent implements OnInit {
 //////////////// SCROLL ////////////////
 
   scrollTo(className: string): void {
@@ -75,7 +75,7 @@ export class SidebarComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
-     if (window.pageYOffset > 550 ) {
+     if (window.pageYOffset > 1000 ) {
        let element = document.getElementById('transparent');
 		element.classList.add('sticky');
 		element.classList.remove('transparent');

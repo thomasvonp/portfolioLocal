@@ -4,23 +4,30 @@
 	[ngStyle.xs]="{'width.%':100}"
 	[ngStyle.sm]="{'width.%':100}"
 	[ngStyle.md]="{'width.%':100}"
-	[ngStyle.lg]="{'width.%':95}">
+	[ngStyle.lg]="{'width.%':90}"
+	[ngStyle.xl]="{'width.%':90}">
 	<div class="grad"> 
 	<h1 style="padding-top:50px; margin-bottom:20px;">Education </h1>
 
 	</div>
-	<div class="educationExp">
+	<div class="educationExp" id="educationExp">
 
 	<!-- <div class="box"> -->
 		<mat-card class="cards">
 			<mat-card-header>
 			<mat-icon></mat-icon>
-				<mat-card-title>Royal Institute of Technology</mat-card-title>
+				<mat-card-title style="font-family:EG;font-size:25px;margin-bottom:30px;">Royal Institute of Technology</mat-card-title>
 				<mat-card-subtitle>
+				<b>2013 - 2019 | Media Technology</b>
+				<br/>
+				Master: Interaction Design & Visualization.
+				<br/>
+				<br/>
+				
 				Media Technology explores techniques of communication within different types of medium and product development. 
 				The idea of the programme is to facilitate the conception of an idea, iteration, development and field research. 
 				The whole process gives a stable foundation for deploying a product into a market.
-				<b>Master: Interaction Design & Visualization.</b>
+
 				<br/>
 				<mat-card class="cards2"
 				[ngStyle.xs]="{'width.%':100}"
@@ -36,25 +43,35 @@
 					<li>C++</li>
 				</ul>
 				</mat-card >
-				<mat-card class="cards2"
+				<mat-card class="cards2" style="float:right;"
 				[ngStyle.xs]="{'width.%':100}"
 				[ngStyle.sm]="{'width.%':100}">
-				<ul class="borderUL">
+				<ul class="borderUL" >
 					<b>Frameworks</b>
 					<li>AngularJS</li>
 					<li>NodeJS</li>
-					<li>Github / SourceTree</li>
+					<li>GitHub / SourceTree</li>
 					<li>Ionic</li>
 					<li>Firebase</li>
 					<li>Google Maps</li>
 					<li>Unity Game Engine</li>
 				</ul>
 				</mat-card>
+				<!-- <mat-card class="cards2" -->
+				<!-- [ngStyle.xs]="{'width.%':100}" -->
+				<!-- [ngStyle.sm]="{'width.%':100}"> -->
+				<!-- <ul class="borderUL"> -->
+					<!-- <b>Software</b> -->
+					<!-- <li>Photoshop</li> -->
+					<!-- <li>Solidworks CAD</li> -->
+					<!-- <li>Office</li> -->
+					<!-- <li>Unity</li> -->
+					<!-- <li>Substance Designer</li> -->
+				<!-- </ul> -->
+				<!-- </mat-card> -->
 				<br/>
 				<br/>
 				The above proficiencies are part of what has been used throughout the multitude of small projects at KTH. 
-				These projects allowed me to develop a critical and logical way of solving different problems with the tools at hand.
-				
 				</mat-card-subtitle>
 			</mat-card-header>
 		</mat-card>
@@ -71,7 +88,7 @@
 	</div>
 	
 	<!-- margin-left: auto; margin-right:auto; width:50%;" -->
-	<div class="infoExp">
+	<div class="infoExp" id="infoExp">
 
 		
 		<mat-card class="cards"
@@ -85,25 +102,33 @@
 		[ngStyle.sm]="{'min-height.px':0}">
 			<mat-card-header>
 			<mat-icon></mat-icon>
-				<mat-card-title>Elgiganten AB</mat-card-title>
+				<mat-card-title style="font-family:EG;font-size:25px;margin-bottom:30px;">Work Experience</mat-card-title>
 				<mat-card-subtitle>
-				<b>Current employment| Salesperson</b>
+				<b>Current employment | Salesperson | Elgiganten AB</b>
 				
 				<br/>
 				Being a salesperson involves giving the customer the best possible experience of purchasing a product. Not only should the customer receive the correct product for his or her needs,
 				but also have a positive experience of the purchase. Making a proper analysis of customer needs, considering essential accessories or services and pedagogically presenting the
 				solution at hand is unique to every customer and their needs. This entire process includes not only retail but business-to-business sales.
-				In addition to this, a certification for insurance sales is required for selling these.
+				In addition to this, a certification for insurance sales is required for selling these. 
 				<br/>
 				<br/>
-				<b>2013 - 2017 | Aftersales</b>
+				<b>2013 - 2017 | Aftersales | Elgiganten AB</b>
 				<br/>
 				Support within technology, troubleshooting of products. Tasks involved logistics, RMA's, contact with all suppliers, service of products and stock management. 
 				The role involved customer service after their purchase of a product.
 				<div class="breakline" style="border-bottom:1px solid white; margin-top:13px; margin-bottom:13px;"></div>
-				The choice for moving from Aftersales to Sales was to seek new challenges and widen my expertise. Learning something new is an exciting part of working, especially considering
-				how different the approach towards customers is between these departments. In one end, there is a lot of mailing, phone contact and working with a monitor, while the other one is
-				body language, rhetorics and needs assessment on the spot. 
+				<mat-card-title style="font-family:EG;font-size:25px;margin-bottom:10px;">Software Experience</mat-card-title>
+				<ul style="columns:4; -webkit-columns:4; margin-right:5px;">
+					<li>Adobe Photoshop</li>
+					<li>Solidworks CAD</li>
+					<li>MATLAB</li>
+					<li>Unity Game Engine</li>
+					<li>Substance Designer</li>
+					<li>Sony Vegas Pro</li>
+					<li>Visual Studio</li>
+					<li>Microsoft Office</li>
+				</ul>
 				</mat-card-subtitle>
 			</mat-card-header>
 		</mat-card>	
@@ -113,37 +138,47 @@
 	<div class="grad">
 		<h1 style="margin-bottom:20px;"> About me </h1>
 	</div>
-	<div class="aboutExp" style="margin-bottom:30px;">
+	<div class="aboutExp" id="aboutExp" style="padding-bottom:50px; margin-bottom:50px;">
 	
 		
-		<mat-card class="cards" style="min-height:0px;"
+		<mat-card class="cards"
 		[ngStyle.xs]="{'min-height.px':0}"
 		[ngStyle.sm]="{'min-height.px':0}">
 			<mat-card-header>
 				<mat-icon></mat-icon>
-					<mat-card-title></mat-card-title> 
+					<mat-card-title style="font-family:EG;font-size:25px;margin-bottom:30px;">Background</mat-card-title> 
 					<mat-card-subtitle>
 					My name is Thomas von Prouss and I live in Stockholm, Sweden. I am currently looking for work within my field of study.
-					I started studying Media Technology in 2013 while working part time at Elgiganten. The choice for this programme was made based on
-					how incredibly tech-related it is. A big plus was also how broad the courses were, hence they allowed me to work with a variety of projects hands-on. 
+					While studying, I have been working part time at Elgiganten. The reason for moving from Aftersales to Sales in 2017 was to seek new
+					challenges and widen my expertise. Learning something new is an exciting part of working, especially considering
+					how different the approach towards customers is between these departments. On one hand, there is a lot of mailing, phone contact and working with a monitor,
+					while on the other is body language, rhetorics and needs assessment on the spot.
 					<br/>
-				<div class="breakline" style="border-bottom:1px solid white; margin-top:13px; margin-bottom:13px;"></div>
+					<br/>
+					I started studying Media Technology in 2013. Choosing Media Technology was based on how incredibly tech-related it is. A big plus was also how broad the courses were, hence they allowed me to work with a variety of projects hands-on. 
 					What I learned the most from this programme is how to start, maintain and complete a project regardless of how it begins. Everything from UX-design
 					to back-end has been incredibly exciting to work with simply due to the potential of today's technologies. Two of the field trips I've had the pleasure of doing during my studies
-					was to the HQ of King and Spotify in Stockholm. Two widely different employers, yet both simply astounding with rich culture. 
+					was to the HQ of King and Spotify in Stockholm. Two widely different employers, yet both had a very inspiring work culture. 
 					<br/>
 					<br/>
+
+					<div class="breakline" style="border-bottom:1px solid white; margin-top:13px; margin-bottom:13px;"></div>
+					<p style="float:left; display:inline;">You can get hold of me through the following buttons.</p>
+					<div class="buttoncontact" style="float:right; display:inline; margin:5px;">
+					<a mat-raised-button class="gradient"  style="float:right;" [href]="'https://www.linkedin.com/in/thomas-von-prouss-b0386611b/'" target="blank">LinkedIn</a>
+					<a mat-raised-button class="gradient" [href]="'mailto:thomasvonprouss@me.com'" style="margin-right:15px; float:right;">Mail</a>
+					</div>
 					</mat-card-subtitle>
 				</mat-card-header>
 		</mat-card>	
 		
-		<mat-card class="cards" style="min-height:0px;"
+		<mat-card class="cards"
 		[ngStyle.xs]="{'min-height.px':0}"
 		[ngStyle.sm]="{'min-height.px':0}">
 			<mat-card-header>
 			<mat-icon></mat-icon>
-					<mat-card-title>KTH Course List</mat-card-title> 
-					<mat-card-subtitle>
+					<mat-card-title style="font-family:EG;font-size:25px;margin-bottom:30px;">KTH Course List</mat-card-title> 
+					<mat-card-subtitle style="text-align:left;">
 					<ul style="columns:2; -webkit-columns:2; margin-right:5px;">
 					  <li>Advanced Projectcourse in Interactive Media Technology</li>
 					  <li>Applied Computer Science</li>
@@ -179,26 +214,4 @@
 			</mat-card-header>
 		</mat-card>	
 	</div>	
-
-	<!-- <div class="aboutExp"> -->
-
-		<!-- <div class="box"> -->
-			<!-- <mat-card class="cards" -->
-			<!-- [ngStyle.xs]="{'min-height.px':0}" -->
-			<!-- [ngStyle.sm]="{'min-height.px':0}"> -->
-		
-
-			<!-- </mat-card> -->
-			<!-- <mat-card class="cards" -->
-			<!-- [ngStyle.xs]="{'min-height.px':0}" -->
-			<!-- [ngStyle.sm]="{'min-height.px':0}"> -->
-		
-				<!-- <mat-card-header> -->
-				<!-- <mat-icon></mat-icon> -->
-
-					<!-- </mat-card-subtitle> -->
-				<!-- </mat-card-header> -->
-			<!-- </mat-card> -->
-		<!-- </div> -->
-	<!-- </div> -->
 </div>

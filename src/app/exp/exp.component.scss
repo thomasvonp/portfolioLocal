@@ -25,12 +25,6 @@
   margin-right:auto;
 }
 
-.border
-{
-	width:90%;
-	margin:auto;
-}
-
 .expRef
 {
 
@@ -47,8 +41,9 @@ mat-card-subtitle
 	/* min-width:200px; */
 	min-width:40%;
 	margin-top:15px;
-	margin-left:5px;
-	margin-right:5px;
+	margin-left:-5px;
+	margin-right:-5px;
+	padding:5px;
 }
 
 .cards{

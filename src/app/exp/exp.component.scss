@@ -1,6 +1,8 @@
 .exp
 {
-    height:125vh;
+    height:auto;
+	min-height: 100% !important;
+	position: relative;
 	width:100vw;
 	max-width:100%;
 	margin:0;	
@@ -33,6 +35,11 @@
 {
 
 }
+
+mat-card-subtitle
+{
+	    text-align: justify;
+}
 .cards2 {
 
 	display: inline-flex;
@@ -40,6 +47,8 @@
 	/* min-width:200px; */
 	min-width:40%;
 	margin-top:15px;
+	margin-left:5px;
+	margin-right:5px;
 }
 
 .cards{
@@ -52,8 +61,9 @@
 	padding:20px;
 	color:white;
 	font-style:Verdana;
-	min-height:365px;
-
+	min-height:380px;
+margin-left:10px;
+margin-right:10px;
 }
 
 @font-face {
@@ -62,11 +72,67 @@ src: url("/../assets/EHeadline.otf") format("opentype");
 }
 
 h1 {
-	margin-left:10%;
+	margin-left:3%;
+	margin-right:3%;
 	font-family:E2;
 	font-size:65px;
 	color:white;
+	overflow: hidden;
+	position: relative;
+	/* margin-bottom: 1em; */
+	font-weight:normal;
+	letter-spacing:0.2em;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+h1:before,
+h1:after {
+  background-color: #43344f;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 70%;
+  height:5px;
+}
+
+h1:before {
+  right: 0.5em;
+  margin-left: -65%;
+}
+
+h1:after {
+  left: 0.5em;
+  margin-right: -65%;
+}
+
+.breakline
+{
+
+}
+
+li{
+  /* float:left; */
+  /* display:inline; */
+}
+ul{
+	  overflow:hidden;
+}
+/* h1::after{ */
+	/* content: ''; */
+	/* width: 100%; */
+	/* box-sizing: border-box; */
+	/* border-top: 6px solid #43344f; */
+	/* position: absolute; */
+	/* bottom: 0.5em; */
+	/* margin-left: 0.5em; */
+/* } */
+
+
+
 .mat-card-subtitle{
 	color:white;
 	font-style:Verdana;
@@ -81,9 +147,21 @@ h1 {
 	margin-right:1%;
 }
 
+
+
+.aboutExp
+{
+	flex-flow: row wrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left:1%;
+	margin-right:1%;
+}
+
 .educationExp
 {
-	margin-top:50px;
+	margin-top:10px;
 	flex-flow: row wrap;
 	display: flex;
 	justify-content: center;
@@ -101,6 +179,11 @@ h1 {
 	margin-left:1%;
 	margin-right:1%;
 	margin-bottom:100px;
+}
+
+li 
+{
+	margin:2px;
 }
 
 /* @media screen and (max-width: 600px){ */

@@ -5,6 +5,11 @@
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+@font-face {
+font-family: "EG";
+src: url("/../assets/EHeadline.ttf") format("truetype");
+}
+
 .root {
   display: flex;
   overflow-y:hidden;
@@ -15,8 +20,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .blurOn {
     filter: blur(4px);
-
-
 }
 
 

@@ -1,17 +1,13 @@
-<div class="exp" id="expRef"
-[ngStyle.xs]="{'height.vh':375}"
-[ngStyle.sm]="{'height.vh':450}"
-[ngStyle.md]="{'height.vh':450}"
-[ngStyle.lg]="{'height.vh':350}"
-[ngStyle.xl]="{'height.vh':225}">
+<div class="exp" id="expRef">
 	<div class="arrow-down"></div>
 	<div class="border" style="background-color: #221130; width:90%; margin:auto;"
 	[ngStyle.xs]="{'width.%':100}"
 	[ngStyle.sm]="{'width.%':100}"
 	[ngStyle.md]="{'width.%':100}"
 	[ngStyle.lg]="{'width.%':95}">
-	<div class="grad">
-	<h1 style="padding-top:50px;"> Education </h1>
+	<div class="grad"> 
+	<h1 style="padding-top:50px; margin-bottom:20px;">Education </h1>
+
 	</div>
 	<div class="educationExp">
 
@@ -65,13 +61,13 @@
 		<mat-card class="cards"
 		[ngStyle.xs]="{'min-height.px':0}"
 		[ngStyle.sm]="{'min-height.px':0}">
-			<img [src]="kthSrc" style="max-width:100%; 	border: solid white 2px;">
+			<img [src]="kthSrc" style="max-width:100%; 	border: solid white 2px; position: relative; top: 50%; transform: translateY(2%);">
 		</mat-card>
 		<!-- </div>	 -->
 	</div>
 
 	<div class="grad">
-	<h1> Experience </h1>
+	<h1 style="text-align:right; margin-bottom:20px;"> Experience </h1>
 	</div>
 	
 	<!-- margin-left: auto; margin-right:auto; width:50%;" -->
@@ -81,7 +77,7 @@
 		<mat-card class="cards"
 		[ngStyle.xs]="{'min-height.px':0}"
 		[ngStyle.sm]="{'min-height.px':0}">
-			<img [src]="Elgiganten" style="max-width:100%; 	border: solid white 2px;">
+			<img [src]="Elgiganten" style="max-width:100%; border: solid white 2px; position: relative; top: 50%; transform: translateY(2%);">
 		</mat-card>	
 		
 		<mat-card class="cards"
@@ -91,39 +87,64 @@
 			<mat-icon></mat-icon>
 				<mat-card-title>Elgiganten AB</mat-card-title>
 				<mat-card-subtitle>
-				<b>- 2013 - 2017 | Aftersales</b>
-				<br/>
-				Support within technology, troubleshooting of products. Tasks involved logistics, RMA's, contact with all suppliers, service of products and stock management. 
-				The role involved customer service after their purchase of a product.
-				<br/>
-				<br/>
-				<b> - 2017 - 2019 | Salesperson</b>
+				<b>Current employment| Salesperson</b>
+				
 				<br/>
 				Being a salesperson involves giving the customer the best possible experience of purchasing a product. Not only should the customer receive the correct product for his or her needs,
 				but also have a positive experience of the purchase. Making a proper analysis of customer needs, considering essential accessories or services and pedagogically presenting the
 				solution at hand is unique to every customer and their needs. This entire process includes not only retail but business-to-business sales.
 				In addition to this, a certification for insurance sales is required for selling these.
+				<br/>
+				<br/>
+				<b>2013 - 2017 | Aftersales</b>
+				<br/>
+				Support within technology, troubleshooting of products. Tasks involved logistics, RMA's, contact with all suppliers, service of products and stock management. 
+				The role involved customer service after their purchase of a product.
+				<div class="breakline" style="border-bottom:1px solid white; margin-top:13px; margin-bottom:13px;"></div>
+				The choice for moving from Aftersales to Sales was to seek new challenges and widen my expertise. Learning something new is an exciting part of working, especially considering
+				how different the approach towards customers is between these departments. In one end, there is a lot of mailing, phone contact and working with a monitor, while the other one is
+				body language, rhetorics and needs assessment on the spot. 
 				</mat-card-subtitle>
 			</mat-card-header>
 		</mat-card>	
 
 	</div>
-	
-		<div class="grad">
-		<h1> About me </h1>
-		</div>
-		<div class="aboutme">
 
-		<div class="box">
-			<mat-card class="cards">
-				<mat-card-header>
+	<div class="grad">
+		<h1 style="margin-bottom:20px;"> About me </h1>
+	</div>
+	<div class="aboutExp" style="margin-bottom:30px;">
+	
+		
+		<mat-card class="cards" style="min-height:0px;"
+		[ngStyle.xs]="{'min-height.px':0}"
+		[ngStyle.sm]="{'min-height.px':0}">
+			<mat-card-header>
 				<mat-icon></mat-icon>
-					<mat-card-title>Royal Institute of Technology</mat-card-title> 
+					<mat-card-title></mat-card-title> 
 					<mat-card-subtitle>
-					My name is Thomas von Prouss. I started studying Media Technology in 2013 while working part time at Elgiganten. 
+					My name is Thomas von Prouss and I live in Stockholm, Sweden. I am currently looking for work within my field of study.
+					I started studying Media Technology in 2013 while working part time at Elgiganten. The choice for this programme was made based on
+					how incredibly tech-related it is. A big plus was also how broad the courses were, hence they allowed me to work with a variety of projects hands-on. 
 					<br/>
-					Full list of courses:
-					<ul>
+				<div class="breakline" style="border-bottom:1px solid white; margin-top:13px; margin-bottom:13px;"></div>
+					What I learned the most from this programme is how to start, maintain and complete a project regardless of how it begins. Everything from UX-design
+					to back-end has been incredibly exciting to work with simply due to the potential of today's technologies. Two of the field trips I've had the pleasure of doing during my studies
+					was to the HQ of King and Spotify in Stockholm. Two widely different employers, yet both simply astounding with rich culture. 
+					<br/>
+					<br/>
+					</mat-card-subtitle>
+				</mat-card-header>
+		</mat-card>	
+		
+		<mat-card class="cards" style="min-height:0px;"
+		[ngStyle.xs]="{'min-height.px':0}"
+		[ngStyle.sm]="{'min-height.px':0}">
+			<mat-card-header>
+			<mat-icon></mat-icon>
+					<mat-card-title>KTH Course List</mat-card-title> 
+					<mat-card-subtitle>
+					<ul style="columns:2; -webkit-columns:2; margin-right:5px;">
 					  <li>Advanced Projectcourse in Interactive Media Technology</li>
 					  <li>Applied Computer Science</li>
 					  <li>Algebra and Geometry</li>
@@ -154,8 +175,30 @@
 					  <li>Waves</li>
 					  <li>XML for Publishing</li>
 					</ul>
-					</mat-card-subtitle>
-				</mat-card-header>
-			</mat-card>
-		</div>
-	</div>
+				</mat-card-subtitle>
+			</mat-card-header>
+		</mat-card>	
+	</div>	
+
+	<!-- <div class="aboutExp"> -->
+
+		<!-- <div class="box"> -->
+			<!-- <mat-card class="cards" -->
+			<!-- [ngStyle.xs]="{'min-height.px':0}" -->
+			<!-- [ngStyle.sm]="{'min-height.px':0}"> -->
+		
+
+			<!-- </mat-card> -->
+			<!-- <mat-card class="cards" -->
+			<!-- [ngStyle.xs]="{'min-height.px':0}" -->
+			<!-- [ngStyle.sm]="{'min-height.px':0}"> -->
+		
+				<!-- <mat-card-header> -->
+				<!-- <mat-icon></mat-icon> -->
+
+					<!-- </mat-card-subtitle> -->
+				<!-- </mat-card-header> -->
+			<!-- </mat-card> -->
+		<!-- </div> -->
+	<!-- </div> -->
+</div>

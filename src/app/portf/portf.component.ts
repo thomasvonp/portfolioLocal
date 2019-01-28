@@ -29,7 +29,7 @@ enum VisibilityState {
 }
 
 export interface DialogData {
-  project: 'Bachelor Thesis' | 'Aladeen Adventures' | 'Le Bon Nobel' | 'Digital Hourglass' | 'Group Strength Calculator' | 'Information Visualization' | 'Pangaea' | 'Stellar Bodies Space Simulator' |'Small Group Formations';
+  project: 'Bachelor Thesis' | 'Aladeen Adventures' | 'Le Bon Nobel' | 'Digital Hourglass' | 'Group Strength Calculator' | 'Information Visualization' | 'Pangaea';
 }
 @Injectable()
 
@@ -82,30 +82,20 @@ export class PortfComponent implements OnInit {
       title: 'Le Bon Nobel',
       img: "./assets/nobel.png"
     },
-	{
+	    {
       id: 4,
       title: 'Digital Hourglass',
       img: "./assets/dh2400.jpg"
     },
-	{
+	    {
       id: 5,
-      title: 'Stellar Bodies Space Simulator',
-      img: "./assets/uranus.png"
+      title: 'Pangaea',
+      img: "./assets/pangaea.jpg"
     },
     {
       id: 6,
       title: 'Information Visualization',
       img: "./assets/infovis2.png"
-    },
-	{
-      id: 7,
-      title: 'Pangaea',
-      img: "./assets/pangaea.jpg"
-    },
-    {
-      id: 8,
-      title: 'Small Group Formations',
-      img: "./assets/dm2799.png"
     },
 	
 	

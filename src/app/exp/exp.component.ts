@@ -13,7 +13,7 @@ export class ExpComponent implements OnInit {
   
   kthSrc = "./assets/KTH.jpg"
   EGSrc = "./assets/ELGLogo2.png"
-  Elgiganten = "./assets/elgThomas.jpg"
+  Elgiganten = "./assets/Elgiganten.jpg"
 
   ngOnInit() {
   }

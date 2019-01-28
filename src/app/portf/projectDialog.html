@@ -23,10 +23,6 @@
        <!-- </button> -->
 	   <a style="margin-left:50px;"  *ngIf="data.project === 'Information Visualization'" mat-raised-button target="_blank"
 		[href]="'http://xml.csc.kth.se/~thomasvp/DM2517/ivis/proj2/app/index.html'" target="blank">Link to Demo</a>
-	   <a style="margin-left:50px;"  *ngIf="data.project === 'Stellar Bodies Space Simulator'" mat-raised-button target="_blank"
-	   [href]="'https://drive.google.com/file/d/1W2vUcpIgqp-3aoyHrD3IS3wB1KS8SkVY/view?usp=sharing'" target="blank">Link to research paper</a>
-	   <a style="margin-left:50px;"  *ngIf="data.project === 'Small Group Formations'" mat-raised-button target="_blank"
-	   [href]="'https://drive.google.com/file/d/1-p9ZqzSjMAFPCX69gK2C4p01NSc4lX63/view?usp=sharing'" target="blank">Link to research paper</a>	   
 		</h2>
 
 
@@ -111,7 +107,7 @@
 				[ngStyle.xs]="{'max-width.vw': 100}"
 				[ngStyle.sm]="{'max-width.vw': 100}">
 			<ul>
-				<li><b>Video Animations</b></li>
+				<li><b>Animations</b></li>
 				<li><b>Social media and Analytics</b></li>
 				<li><b>Group work & project iteration</b></li>
 			</ul>
@@ -130,36 +126,6 @@
 				<li><b>D3 JS</b></li>
 				<li><b>API</b></li>
 				<li><b>Information Visualisation</b></li>
-			</ul>
-		</div>
-
-		<div style="max-width: 15vw;
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-				border: 5px solid white;"
-				*ngIf="data.project === 'Stellar Bodies Space Simulator'"
-				[ngStyle.xs]="{'max-width.vw': 100}"
-				[ngStyle.sm]="{'max-width.vw': 100}">
-			<ul>
-				<li><b>Novint Falcon Haptic Device</b></li>
-				<li><b>C++</b></li>
-				<li><b>Chai3D Graphics Engine</b></li>
-			</ul>
-		</div>
-
-		<div style="max-width: 15vw;
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-				border: 5px solid white;"
-				*ngIf="data.project === 'Small Group Formations'"
-				[ngStyle.xs]="{'max-width.vw': 100}"
-				[ngStyle.sm]="{'max-width.vw': 100}">
-			<ul>
-				<li><b>Unity</b></li>
-				<li><b>Group formation and design</b></li>
-				<li><b>Anova analysis</b></li>
 			</ul>
 		</div>
 		
@@ -202,7 +168,7 @@
 		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">
 		This VR project involves multi-screen and multiplayer game design with a focus on multimodal interactions.
 		The goal was to to build a virtual reality game and that was engaging not only the main player, but also to other spectators such that they can participate in the game on a main screen.
-		To do this, we developed the VR-game supplemented by a database and an AngularJS website for spectators to browse on their mobile phones as a second screen.
+		To do this, we developed the VR-game supplemented by a website, a database and a website for spectators to browse on their mobile phones as a second screen.
 		</p>
 		
 		<!-- Lebon -->
@@ -252,16 +218,7 @@
 		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">	
 		
 		</p>
-		<p *ngIf="data.project === 'Small Group Formations'"
-		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
-		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
-		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
-		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">			
-		When small groups of people gather in public areas, they often form free standing conversational groups.
-		Understanding how to generate realistic looking groups of virtual characters forms an important basis for media and entertainment applications that feature groups of agents.
-		This research investigates the physical proximity to virtual characters and the perceived comfort for the subjects who wears a designated virtual reality headset. The subject is presented static groups with varying
-		circular formations while instructed to move towards them until they feel that they are at a comfortable distance to the group.
-		</p>				
+		
 		<!-- InfoVis -->
 		<p *ngIf="data.project === 'Information Visualization'"
 		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
@@ -277,18 +234,6 @@
 			<iframe style="display:block; margin:auto;" *ngIf="data.project === 'Pangaea'" src="https://drive.google.com/file/d/1IY_KA2BvS9icsB3JJ4dCW_o2WSQFGSTT/preview" width="60%" height="500px"></iframe>		
 			</div>
 		</div>
-
-		<p *ngIf="data.project === 'Stellar Bodies Space Simulator'"
-		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
-		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
-		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
-		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">			
-		Haptics as a part of multimodal interfaces has been proposed with having potential becoming powerful tools for educational settings.
-		However, it’s been hard to conclude how to balance the impact of different modalities for specific learning goals.
-		We wanted to investigate if a haptic simulation could be helpful in learning about size and mass of stellar bodies and thus created and evaluated such a simulation.
-		Participants of our evaluation were able to correctly distinguish the general relationships, but not to level of precision we aimed for.
-		We conclude that this area still shows promise but propose a different direction where this type of interfaces are used as a complement to other learning methods.
-		</p>
 		
 		<p *ngIf="data.project === 'Pangaea'"
 		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
@@ -306,33 +251,19 @@
 		The animation was quickly done with the help of Moovly in order to get a short ad for the project.
 		</p>
 		
-
+		
 		
 		
 		<!-- Pictures -->
 		
-		<img [src]="data.picture" *ngIf="data.project != 'Information Visualization'" 
-		style="border: 5px white solid;max-width:70%; border-radius: 2%; display: block; margin-left: auto; margin-right: auto;"
-		[ngStyle.xs]="{'max-width:.%': 100}"
-		[ngStyle.sm]="{'max-width:.%': 100}">
+		<img [src]="data.picture" *ngIf="data.project != 'Information Visualization'" style="border: 5px white solid;max-width:30vw; border-radius: 2%; display: block; margin-left: auto; margin-right: auto;">
 	
 		<!-- https://drive.google.com/file/d/1IY_KA2BvS9icsB3JJ4dCW_o2WSQFGSTT/view -->
 	
-		<img *ngIf="data.project === 'Information Visualization'" [src]="infovis1" 
-		style="border: 5px white solid; border-radius: 2%;  max-width:70%; display: block; margin-left: auto; margin-right: auto;"
-		[ngStyle.xs]="{'max-width:.%': 100}"
-		[ngStyle.sm]="{'max-width:.%': 100}"/>
-		<img *ngIf="data.project === 'Information Visualization'" [src]="infovis2" 
-		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto;"
-		[ngStyle.xs]="{'max-width:.%': 100}"
-		[ngStyle.sm]="{'max-width:.%': 100}"/>		
-		<img *ngIf="data.project === 'Stellar Bodies Space Simulator'" [src]="earth" 
-		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto;"
-		[ngStyle.xs]="{'max-width:.%': 100}"
-		[ngStyle.sm]="{'max-width:.%': 100}"/>		
+		<img *ngIf="data.project === 'Information Visualization'" [src]="infovis1" style="border: 5px white solid; border-radius: 2%;  max-width:30vw; display: block; margin-left: auto; margin-right: auto;"/>
+		<br/>
+		<img *ngIf="data.project === 'Information Visualization'" [src]="infovis2" style="border: 5px white solid; border-radius: 2%; max-width:30vw; display: block; margin-left: auto; margin-right: auto;"/>		
 
-		
-		
 	
 	
 	
@@ -445,56 +376,14 @@
 
 		</p>
 
-				
-		<p *ngIf="data.project === 'Small Group Formations'"
-		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
-		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
-		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
-		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">			
-		The subjects move forward in 60 times towards a group of agents whose positions were digitally generated using latin square randomization selection. This was done
-		to ensure that similarly looking scenarios were not presented to the user. The user has two tasks; The first one is to stop 
-		at a distance where they felt comfortable standing. The second task was to note how welcome they feel into the group of agents, on a scale of one to five.
-		<br/>
-		<br/>
-		The results show that most of the openness of groups follow a clear path as to how a group is formed. Test subjects tend to feel more welcome to groups that are closer together and facing
-		towards the subject. Subjects that were presented to groups forming a closed circle felt on average less welcome.
-		</p>
-
-		<p *ngIf="data.project === 'Stellar Bodies Space Simulator'"
-		[ngStyle.xs]="{'padding-left.%': 2, 'padding-right.%': 2 }"
-		[ngStyle.sm]="{'padding-left.%': 10, 'padding-right.%': 10 }"
-		[ngStyle.md]="{'padding-left.%': 20, 'padding-right.%': 20 }"
-		[ngStyle.xl]="{'padding-left.%': 30, 'padding-right.%': 30 }">			
-		This project was developed with the help of C++ using the Chai3D graphics engine. User input was handled through the Novint Falcon haptic device. 
-		This device can receive input in three axis (X, Y and Z). When a user enters the scene, they controlled a small white ball that can be moved around in the scene.
-		With the help of keyboard, the user can switch scenes and receive different planets. The planets can be touched with the device which physically obstructs movement if the user
-		attempts to move towards it. The device also allows the user to "grip" the planet and move it around, which induces a resistance in the movement of the device, depending on which
-		object was gripped.
-
-		</p>
+		
 		
 		<br/>
 		<!-- Pictures P2 -->
-		<img *ngIf="data.project === 'Bachelor Thesis'" [src]="kex2" 
-		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto;"
-		[ngStyle.xs]="{'max-width:.%': 100}"
-		[ngStyle.sm]="{'max-width:.%': 100}"/>		
-		<img *ngIf="data.project === 'Aladeen Adventures'" [src]="aladeen2" 
-		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto;"
-		[ngStyle.xs]="{'max-width:.%': 100}"
-		[ngStyle.sm]="{'max-width:.%': 100}"/>		
+		<img *ngIf="data.project === 'Bachelor Thesis'" [src]="kex2" style="border: 5px white solid; border-radius: 2%; max-width:50vw; display: block; margin-left: auto; margin-right: auto;"/>		
+		<img *ngIf="data.project === 'Aladeen Adventures'" [src]="aladeen2" style="border: 5px white solid; border-radius: 2%; max-width:30vw; display: block; margin-left: auto; margin-right: auto;"/>		
 		<!-- <img *ngIf="data.project === 'Le Bon Nobel'" [src]="data.picture" style="max-width:50vw;"/>		 -->
-		<img *ngIf="data.project === 'Digital Hourglass'" 
-		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto;" [src]="dh24001"
-		[ngStyle.xs]="{'max-width:.%': 100}"
-		[ngStyle.sm]="{'max-width:.%': 100}"/>	
-		<img *ngIf="data.project === 'Group Strength Calculator'" [src]="data.picture" 
-		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto;"
-		[ngStyle.xs]="{'max-width:.%': 100}"
-		[ngStyle.sm]="{'max-width:.%': 100}"/>		
-		<img *ngIf="data.project === 'Small Group Formations'" [src]="generator" 
-		style="border: 5px white solid; border-radius: 2%; max-width:70%; display: block; margin-left: auto; margin-right: auto;"
-		[ngStyle.xs]="{'max-width:.%': 100}"
-		[ngStyle.sm]="{'max-width:.%': 100}"/>	
+		<img *ngIf="data.project === 'Digital Hourglass'" style="border: 5px white solid; border-radius: 2%; max-width:30vw; display: block; margin-left: auto; margin-right: auto;" [src]="dh24001"/>	
+		<img *ngIf="data.project === 'Group Strength Calculator'" [src]="data.picture" style="border: 5px white solid; border-radius: 2%; max-width:30vw; display: block; margin-left: auto; margin-right: auto;"/>		
 	</mat-dialog-content>
 </div>

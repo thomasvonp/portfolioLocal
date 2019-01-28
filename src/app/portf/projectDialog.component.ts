@@ -34,10 +34,6 @@ export class projectDialogComponent implements OnInit {
 	dh24001 = './assets/dh24001.jpg'
 	infovis1 = './assets/image1.png'
 	infovis2 = './assets/image2.png'
-	uranus = "./assets/uranus.png"
-	earth = "./assets/earthmars.png"
-	group = "./assets/dm2799.png"
-	generator = "./assets/generator.png"
   ngOnInit() {  }
   
   

@@ -3,6 +3,12 @@ font-family: "E2";
 src: url("/../assets/EHeadline.otf") format("opentype");
 }
 
+@media screen and (max-width: 767px) {
+    .hidden-xs {
+        display:none;
+    }
+}
+
 .sticky {
 	background-color: transparent !important;
   	text-align:right;
@@ -54,6 +60,8 @@ src: url("/../assets/EHeadline.otf") format("opentype");
 	font-size:25px;
 	letter-spacing:0.2em;
 	margin:10px;
+	margin-right:0px;
+	margin-left:0px;
 }
 
 

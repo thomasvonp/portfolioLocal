@@ -1,16 +1,16 @@
 	<mat-toolbar class="animated fadeInDown transparent" id="transparent" [ngStyle.xs]="{'font-size.px': 15, 'letter-spacing.px': 0, 'margin.px': 0}">
-		<button mat-button (click)="scrollTo('portfRef')" color="primary" [ngStyle.xs]="{'font-size.px': 20, 'letter-spacing.px': 0, 'margin.px': 0}">Portfolio</button>
-		•
-		<button mat-button (click)="scrollTo('educationExp')"color="primary" [ngStyle.xs]="{'font-size.px': 20, 'letter-spacing.px': 0, 'margin.px': 0}">Education</button>
-		•
-		<button mat-button (click)="scrollTo('infoExp')"color="primary" [ngStyle.xs]="{'font-size.px': 20, 'letter-spacing.px': 0, 'margin.px': 0}">Experience</button>
-		•
-		<button mat-button (click)="scrollTo('aboutExp')"color="primary" [ngStyle.xs]="{'font-size.px': 20, 'letter-spacing.px': 0, 'margin.px': 0}">About Me</button>
-		•
-		<button mat-button [matMenuTriggerFor]="menu" color="primary" [ngStyle.xs]="{'font-size.px': 20, 'letter-spacing.px': 0, 'margin.px': 0}">Contact</button>
+		<button mat-button class="hidden-xs" (click)="scrollTo('portfRef')" color="primary"> • Portfolio</button>
+
+		<button mat-button class="hidden-xs" (click)="scrollTo('educationExp')"color="primary"> • Education</button>
+
+		<button mat-button class="hidden-xs" (click)="scrollTo('infoExp')"color="primary"> • Experience</button>
+		
+		<button mat-button class="hidden-xs" (click)="scrollTo('aboutExp')"color="primary"> • About Me</button>
+
+		<button mat-button [matMenuTriggerFor]="menu" color="primary"> • Contact</button>
 		<mat-menu #menu="matMenu">
-			<a mat-menu-item [href]="'mailto:thomasvonprouss@me.com'" color="primary" [ngStyle.xs]="{'font-size.px': 20, 'letter-spacing.px': 0 , 'margin.px': 0}">Mail</a>
-			<a mat-menu-item color="primary" [ngStyle.xs]="{'font-size.px': 20, 'letter-spacing.px': 0 , 'margin.px': 0}" [href]="'https://www.linkedin.com/in/thomas-von-prouss-b0386611b/'" target="blank">LinkedIn</a>
+			<a mat-menu-item [href]="'mailto:thomasvonprouss@me.com'" color="primary">Mail</a>
+			<a mat-menu-item color="primary" [href]="'https://www.linkedin.com/in/thomas-von-prouss-b0386611b/'" target="blank">LinkedIn</a>
 		</mat-menu>
 	</mat-toolbar>
 	

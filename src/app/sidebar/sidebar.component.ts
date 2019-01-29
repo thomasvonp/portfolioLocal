@@ -75,7 +75,7 @@ export class SidebarComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
-     if (window.pageYOffset > 1000 ) {
+     if (window.pageYOffset > 500 ) {
        let element = document.getElementById('transparent');
 		element.classList.add('sticky');
 		element.classList.remove('transparent');

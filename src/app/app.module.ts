@@ -32,6 +32,7 @@ import { projectDialogComponent } from './portf/projectDialog.component';
 	ReactiveFormsModule,
 	DemoMaterialModule,
 	FlexLayoutModule,
+	HttpClientModule,
 	ScrollToModule.forRoot()
   ],
   providers: [],
